@@ -1,0 +1,19 @@
+{
+  "name": "transacciones",
+  "version": "1.0.0",
+  "description": "Servicio de transacciones.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caleti/transacciones.git"
+  },
+  "author": "Equipo 1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caleti/transacciones/issues"
+  },
+  "homepage": "https://github.com/caleti/transacciones#readme"
+}
