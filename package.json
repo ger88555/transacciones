@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/caleti/transacciones/issues"
   },
-  "homepage": "https://github.com/caleti/transacciones#readme"
+  "homepage": "https://github.com/caleti/transacciones#readme",
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
 }
