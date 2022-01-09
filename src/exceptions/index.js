@@ -1,3 +1,3 @@
 module.exports = {
-    ...require('./BancoAPIException')
+    BancoAPIException: require('./BancoAPIException')
 }
