@@ -1,4 +1,7 @@
-import Transacciones from './service'
-export * from './exceptions'
+const Transacciones = require('./service');
+const exceptions = require('./exceptions');
 
-export default Transacciones.getInstancia
+module.exports = {
+  Transacciones: Transacciones.getInstancia,
+  ...exceptions
+}
