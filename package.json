@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/caleti/transacciones.git"
+    "url": "git+https://github.com/ger88555/transacciones.git"
   },
-  "author": "Equipo 1",
+  "author": "Equipo 3",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/caleti/transacciones/issues"
+    "url": "https://github.com/ger88555/transacciones/issues"
   },
-  "homepage": "https://github.com/caleti/transacciones#readme",
+  "homepage": "https://github.com/ger88555/transacciones#readme",
   "dependencies": {
     "axios": "^0.24.0"
   }
