@@ -25,10 +25,10 @@ class Transacciones {
             Transacciones._instancia = new Transacciones()
         }
 
-        if (url)    this._instancia.setURL(url);
-        if (cuenta) this._instancia.setCuenta(cuenta);
+        if (url)    Transacciones._instancia.setURL(url);
+        if (cuenta) Transacciones._instancia.setCuenta(cuenta);
 
-        return this._instancia
+        return Transacciones._instancia
     }
 
     /**
