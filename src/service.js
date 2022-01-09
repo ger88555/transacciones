@@ -21,8 +21,8 @@ class Transacciones {
      * @returns 
      */
     static getInstancia({ url = constants.API_URL, cuenta = null }) {
-        if (this._instancia === null) {
-            this._instancia = new Transacciones()
+        if (Transacciones._instancia === null) {
+            Transacciones._instancia = new Transacciones()
         }
 
         if (url)    this._instancia.setURL(url);
