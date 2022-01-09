@@ -20,13 +20,13 @@ class Transacciones {
      * @param {String} config.cuenta Cuenta del banco a utilizar.
      * @returns 
      */
-    static getInstancia({ url = constants.API_URL, cuenta = null }) {
+    static getInstancia(config = { url = constants.API_URL, cuenta = null }) {
         if (Transacciones._instancia === null) {
             Transacciones._instancia = new Transacciones()
         }
 
-        if (url)    Transacciones._instancia.setURL(url);
-        if (cuenta) Transacciones._instancia.setCuenta(cuenta);
+        if (config?.url)    Transacciones._instancia.setURL(url);
+        if (config?.cuenta) Transacciones._instancia.setCuenta(cuenta);
 
         return Transacciones._instancia
     }
