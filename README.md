@@ -15,7 +15,7 @@ Comunicarse con la API del banco consiste en utilizar números de tarjeta para i
 Por ejemplo, si nuestro número de tarjeta bancaria es '111111111111', y la de otro cliente es '2222222222222222':
 
 ```javascript
-const { Transacciones } = require('transacciones')
+const Transacciones = require('transacciones')
 
 
 /// Definir la cuenta bancaria:
