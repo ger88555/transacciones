@@ -25,8 +25,8 @@ class Transacciones {
             Transacciones._instancia = new Transacciones({ url: constants.API_URL, cuenta: null })
         }
 
-        if (config?.url)    Transacciones._instancia.setURL(url);
-        if (config?.cuenta) Transacciones._instancia.setCuenta(cuenta);
+        if (config?.url)    Transacciones._instancia.setURL(config.url);
+        if (config?.cuenta) Transacciones._instancia.setCuenta(config.cuenta);
 
         return Transacciones._instancia
     }
