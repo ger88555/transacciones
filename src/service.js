@@ -9,8 +9,11 @@ class Transacciones {
 
     _api = null;
 
-    constructor() {
+    constructor({ url, cuenta }) {
         this._api = axios.create();
+
+        this.setURL(url);
+        this.setCuenta(cuenta);
     }
 
     /**
@@ -18,7 +21,7 @@ class Transacciones {
      * @param {Object} config Configuración.
      * @param {String} config.url API del banco a utilizar (opcional).
      * @param {String} config.cuenta Cuenta del banco a utilizar.
-     * @returns 
+     * @returns {Transacciones}
      */
     static getInstancia(config = { url: null, cuenta: null }) {
         if (Transacciones._instancia === null) {
@@ -76,7 +79,7 @@ class Transacciones {
                 throw new BancoAPIException(data.resultado)
             }
 
-            return data.data?.resultado;
+            return data.resultado[0];
         } catch (error) {
 
             // Aquí es mejor definir excepciones de la librería que utilizar
